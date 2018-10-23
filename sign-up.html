@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Sign Up | cs 484 lab 3</title>
+		<link rel="stylesheet" href="/css/signup.css">
+	</head>
+	<body>
+		<h1>SIGN UP PAGE</h1>
+		<header>
+			<nav>LINKS
+				<ul>
+					<li> <a href="index1.html">First Page</a> </li>
+					<li> <a href="privacy.html">Privacy Agreement</a> </li>
+					<li> <a href="about-us.html">About Us</a> </li>
+				</ul>
+			</nav>
+		</header>
+		<article class="signup">
+			<p>Sign up today to recieve updates. <br> Enter your information.</p>
+			<form class="sign-up-form" action="http://www.deitel.com" method="post">
+				<div class="first-name">
+					<label for="name"></label>
+					<input type="text" placeholder="First Name" id="first-name" required autofocus>
+				</div>
+				<div class="last-name">
+					<label for="name"></label>
+					<input type="text" placeholder="Last Name" id="last-name" required>
+				</div>
+				<div class="email">
+					<label for="email"></label>
+					<input type="text" placeholder="Email" id="email" required>
+				</div>
+				<div class="password">
+					<label for="password"></label>
+					<input type="text" placeholder="Password" id="password" required>
+				</div>
+				<div class="password">
+					<label for="password"></label>
+					<input type="text" placeholder="Confirm Password" id="confirm-password" required>
+				</div>
+				<div class="birthdate">
+					<label for="birthdate"></label>
+					<input type="date" id="birthdate" value="1998-01-01">
+				</div>
+				<button type="submit" id="submit-button">Submit</button>
+				<!-- drop down list called datalist  -->
+				<nav class="datalist">Datalist
+					<ul class="datalist">
+						<li>Civil Engineering</li>
+						<li>Computer Engineering</li>
+						<li>Computer Information Technology</li>
+						<li>Computer Science</li>
+						<li>Electrical Engineering</li>
+						<li>Engineering Management</li>
+						<li>Manufacturing Systems Engineering</li>
+						<li>Mechanical Engineering</li>
+					</ul>
+				</nav>
+			</form>
+			<!-- end form -->
+
+			<footer>
+				<p> <img src="./images/sugarglider.png" alt="image of andrew tran"> Jones & Smith Inc. John Smith, CEO John@JonesnSmith.com</p>
+				<p> <a href="index2.html"> Copyright info. &copy; ...., INC. ALL RIGHTS RERSERVED</a> </p>
+				<address>
+					Contact us at: <a href="mailto:andrew.tran.438@my.csun.edu">andrew.tran.438@my.csun.edu</a> <br>
+					Andrew Tran <br>
+					123 fake st. <br />
+					Northridge, CA 91324. <br>
+					<tel>(626)-123-4567</tel>
+				</address>
+			</footer>
+			<!-- end footer -->
+		</article>
+	</body>
+</html>
