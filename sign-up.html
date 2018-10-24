@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Sign Up | cs 484 lab 3</title>
+		<link rel="stylesheet" href="./css/signup.css">
+		<link rel="stylesheet" href="./css/master.css">
+	</head>
+	<body>
+		<h1>SIGN UP PAGE</h1>
+		<header>
+			<nav class="links-nav">LINKS
+				<ul class="links-nav">
+					<li> <a href="index1.html">First Page</a> </li>
+					<li> <a href="privacy.html">Privacy Agreement</a> </li>
+					<li> <a href="about-us.html">About Us</a> </li>
+				</ul>
+			</nav>
+		</header>
+		<article class="signup">
+			<p>Sign up today to recieve updates. <br> Enter your information.</p>
+			<form class="sign-up-form" action="http://www.deitel.com" method="post" >
+				<div class="firstname">
+					<label><input type="text" placeholder="First Name" id="first-name" autocomplete="on" required autofocus></label>
+				</div>
+				<div class="lastname">
+					<label><input type="text" placeholder="Last Name" id="last-name" autocomplete="on" required></label>
+				</div>
+				<div class="email">
+					<label><input type="text" placeholder="Email" id="email" required autocomplete="off"></label>
+				</div>
+				<div class="password">
+					<label><input type="text" placeholder="Password" id="password" required></label>
+				</div>
+				<div class="password">
+					<label><input type="text" placeholder="Confirm Password" id="confirm-password" required></label>
+				</div>
+				<div class="birthdate">
+					<label><input type="date" id="birthdate" value="1998-01-01"></label>
+				</div>
+				<div class="major">
+					<label for="major-choice"><input list="majors" id="major-choice" placeholder="Select a Major">
+						<datalist id="majors">
+							<option value="Civil Engineering">
+							<option value="Computer Engineering">
+							<option value="Computer Information Technology">
+							<option value="Computer Science">
+							<option value="Electrical Engineering">
+							<option value="Engineering Management">
+							<option value="Manufacturing Systems Engineering">
+							<option value="Mechanical Engineering">
+						</datalist>
+					</label>
+				</div>
+				<div class="color-selector">
+					<label>Choose your favorite color: <input type="color" id="color"> </label>
+				</div>
+				<div class="college-years">
+					<label>Number of years in college: <input type="number" id="college-years" min="1" max="4"> </label>
+				</div>
+				<div class="telephone">
+					<label> Telephone: <input type="tel" placeholder="(###) ###-####" pattern="\(\d{3}\) +\d{3}-\d{4}" required maxlength="20" autocomplete="off"> </label>
+				</div>
+				<div class="user-url">
+					<label> What's your URL: <input type="url" placeholder="https://www.homepage.com" autocomplete="off"> (http://www.yourdomain.com) </label>
+				</div>
+				<div class="experience">
+					<label> Years of Experience: <input type="number" min="0" step="5"> </label>
+				</div>
+				<div class="skill">
+					<label> Skill Level: 0 <input type="range" min="0" max="10" value="5"> 10 </label>
+				</div>
+				<div class="contact-pref">
+					<label for="contact-choice"><input list="contacts" id="contact-choice" placeholder="Choose a contact preference">
+						<datalist id="contacts">
+							<option value="I would like to receive emails about new products and offers.">
+							<option value="I would like to receive emails about my account and membership.">
+							<option value="I would like to receive mail">
+						</datalist>
+					</label>
+				</div>
+
+				<button type="submit" id="submit-button">Sign Up</button>
+				<button type="reset" id="reset-button">Reset</button>
+			</form>
+			<!-- end form -->
+
+			<footer>
+				<p> <img class="member2logo" src="./images/sugarglider.png" alt="image of andrew tran"> Jones & Smith Inc. John Smith, CEO John@JonesnSmith.com</p>
+				<p> <a href="privacy.html"> Copyright info. &copy; ...., INC. ALL RIGHTS RERSERVED</a> </p>
+				<address>
+					Contact us at: <a href="mailto:andrew.tran.438@my.csun.edu">andrew.tran.438@my.csun.edu</a> <br>
+					Andrew Tran <br>
+					123 fake st. <br />
+					Northridge, CA 91324. <br>
+					<tel>(626)-123-4567</tel>
+				</address>
+			</footer>
+			<!-- end footer -->
+		</article>
+	</body>
+</html>
