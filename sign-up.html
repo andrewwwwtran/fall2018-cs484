@@ -3,13 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Sign Up | cs 484 lab 3</title>
-		<link rel="stylesheet" href="/css/signup.css">
+		<link rel="stylesheet" href="./css/signup.css">
+		<link rel="stylesheet" href="./css/master.css">
 	</head>
 	<body>
 		<h1>SIGN UP PAGE</h1>
 		<header>
-			<nav>LINKS
-				<ul>
+			<nav class="links-nav">LINKS
+				<ul class="links-nav">
 					<li> <a href="index1.html">First Page</a> </li>
 					<li> <a href="privacy.html">Privacy Agreement</a> </li>
 					<li> <a href="about-us.html">About Us</a> </li>
@@ -43,7 +44,6 @@
 					<label for="birthdate"></label>
 					<input type="date" id="birthdate" value="1998-01-01">
 				</div>
-				<button type="submit" id="submit-button">Submit</button>
 				<!-- drop down list called datalist  -->
 				<nav class="datalist">Datalist
 					<ul class="datalist">
@@ -57,11 +57,20 @@
 						<li>Mechanical Engineering</li>
 					</ul>
 				</nav>
+				<div class="color-selector">
+					<label for="color">Your favorite color: </label>
+					<input type="color" id="color">
+				</div>
+				<div class="college-years">
+					<label for="college-years">Number of years in college: </label>
+					<input type="number" id="college-years" min="1" max="4">
+				</div>
+				<button type="submit" id="submit-button">Submit</button>
 			</form>
 			<!-- end form -->
 
 			<footer>
-				<p> <img src="./images/sugarglider.png" alt="image of andrew tran"> Jones & Smith Inc. John Smith, CEO John@JonesnSmith.com</p>
+				<p> <img class="member2logo" src="./images/sugarglider.png" alt="image of andrew tran"> Jones & Smith Inc. John Smith, CEO John@JonesnSmith.com</p>
 				<p> <a href="index2.html"> Copyright info. &copy; ...., INC. ALL RIGHTS RERSERVED</a> </p>
 				<address>
 					Contact us at: <a href="mailto:andrew.tran.438@my.csun.edu">andrew.tran.438@my.csun.edu</a> <br>
