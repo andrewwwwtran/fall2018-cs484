@@ -1,10 +1,39 @@
 /* color palette */
 
+body{
+  text-align: center;
+}
+
 /* class */
 .member2logo{
   height: 100px;
   width: auto;
 }
-.links-nav{
+nav.links-nav{
+  width: 150px;
+  text-align: center;
+  background-color: royalblue;
+  border: 2px solid black;
+  font-weight: 10;
+  position: fixed;
+}
+nav.links-nav ul.links-nav{
+  width: inherit;
+  background-color: pink;
+  display: none;
   list-style: none;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  /* position: fixed; */
+}
+nav.links-nav:hover ul{
+  display: block;
+}
+nav.links-nav ul.links-nav li{
+  border-top: 2px solid black;
+  width: inherit;
+}
+nav.links-nav ul.links-nav li:hover{
+  background-color: white;
 }
