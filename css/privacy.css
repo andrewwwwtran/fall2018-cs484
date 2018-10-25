@@ -1,18 +1,27 @@
 table.department-table{
 	border: 2px solid black;
+	background-color: white;
 	align-content: center;
 	text-align: left;
+	/* position: absolute; */
+	left: 50%;
 }
 table.department-table thead{
 	background-color: darkgrey;
-	color: #fff;
+	/* color: #fff; */
+	text-align: center;
 }
 img.privacyImage{
-	background-attachment: scroll;
+	/* background-attachment: fixed; */
 }
 
 aside.contact-us{
+	border: 2px solid black;
 	width: 20%;
+	position: absolute;
+	top: auto;
+	bottom: auto;
+	right: 300px;
 }
 
 /* columns */

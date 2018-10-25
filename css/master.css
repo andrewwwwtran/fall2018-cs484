@@ -3,44 +3,6 @@
     src: url(../font/comic.ttf);
 }
 
-body{
-  text-align: center;
-}
-
-/* class */
-.member2logo{
-  height: 100px;
-  width: auto;
-}
-nav.links-nav{
-  width: 150px;
-  text-align: center;
-  background-color: royalblue;
-  border: 2px solid black;
-  font-weight: 10;
-  position: absolute;
-}
-nav.links-nav ul.links-nav{
-  width: inherit;
-  background-color: pink;
-  display: none;
-  list-style: none;
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-  /* position: fixed; */
-}
-nav.links-nav:hover ul{
-  display: block;
-}
-nav.links-nav ul.links-nav li{
-  border-top: 2px solid black;
-  width: inherit;
-}
-nav.links-nav ul.links-nav li:hover{
-  background-color: white;
-}
-
 /* Normalize
    ========================================================================== */
 
@@ -51,7 +13,8 @@ html {
 body {
   margin: 0;
   font-family: Comic;
-  color: #353535
+  color: #353535;
+	text-align: center;
 }
 
 a {
@@ -306,6 +269,41 @@ textarea {
      position: fixed;
      bottom: 0;
      width: 98%;
+}
+
+/* class */
+.member2logo{
+  height: 100px;
+  width: auto;
+}
+nav.links-nav{
+  width: 200px;
+  text-align: center;
+  background-color: powderblue;
+  border: 2px solid black;
+  font-weight: 10;
+  position: absolute;
+	top: 5px;
+}
+nav.links-nav ul.links-nav{
+  width: inherit;
+  background-color: pink;
+  display: none;
+  list-style: none;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  /* position: fixed; */
+}
+nav.links-nav:hover ul{
+  display: block;
+}
+nav.links-nav ul.links-nav li{
+  border-top: 2px solid black;
+  width: inherit;
+}
+nav.links-nav ul.links-nav li:hover{
+  background-color: white;
 }
 
 /* End
