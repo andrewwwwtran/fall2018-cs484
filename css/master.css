@@ -16,6 +16,9 @@ body {
   color: #353535;
 	text-align: center;
 }
+footer{
+	clear: both;
+}
 
 a {
   background-color: transparent;
@@ -271,11 +274,11 @@ textarea {
      width: 98%;
 }
 
-/* class */
 .member2logo{
   height: 100px;
   width: auto;
 }
+/* navigation bar */
 nav.links-nav{
   width: 200px;
   text-align: center;

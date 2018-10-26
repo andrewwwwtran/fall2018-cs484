@@ -1,27 +1,41 @@
+p.department-table{
+	text-align: center;
+}
 table.department-table{
 	border: 2px solid black;
 	background-color: white;
 	align-content: center;
 	text-align: left;
-	/* position: absolute; */
-	left: 50%;
+	position: relative;
+	margin-left: 30%;
+	margin-right: auto;
 }
-table.department-table thead{
+table.department-table thead, tfoot{
 	background-color: darkgrey;
-	/* color: #fff; */
 	text-align: center;
 }
-img.privacyImage{
-	/* background-attachment: fixed; */
+article{
+	/* image used */
+	background-image: url('../images/dino.png');
+	/* left bottom corner */
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	/* same position when scrolling  */
+	background-attachment: fixed;
+	background-size: auto;
 }
-
 aside.contact-us{
+	background-color: lightpink;
 	border: 2px solid black;
 	width: 20%;
-	position: absolute;
-	top: auto;
-	bottom: auto;
-	right: 300px;
+	float: right;
+	height: inherit;
+}
+div.privacyDiv{
+	top: 100px;
+	bottom: 100px;
+	right: 100px;
+	width: 100%;
 }
 
 /* columns */
