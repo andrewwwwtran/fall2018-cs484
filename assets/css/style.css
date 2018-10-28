@@ -3,6 +3,7 @@
     src: url(../font/comic.ttf);
 }
 
+
 /* Normalize
    ========================================================================== */
 
@@ -14,10 +15,7 @@ body {
   margin: 0;
   font-family: Comic;
   color: #353535;
-	text-align: center;
-}
-footer{
-	clear: both;
+  min-height: 100%;
 }
 
 a {
@@ -29,6 +27,11 @@ a {
 b,
 strong {
   font-weight: bolder;
+}
+
+.small, small {
+    font-size: 80%;
+    font-weight: 400;
 }
 
 sub,
@@ -47,7 +50,7 @@ sup {
   top: -0.5em;
 }
 
-ul {
+ul, ol {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -56,7 +59,9 @@ ul {
 p {
     margin: 0 0 10px 0;
 }
-
+img{
+  max-width: 100%;
+}
 button,
 input,
 optgroup,
@@ -136,6 +141,9 @@ textarea {
 [hidden] {
   display: none;
 }
+table {
+    border-collapse: collapse;
+}
 
 /* End
    ========================================================================== */
@@ -152,10 +160,107 @@ textarea {
 .m-0 {
     margin: 0 !important;
 }
+.mr-40 {
+    margin-right: 40px;
+}
+.btn {
+    border-radius: 4px;
+}
+.m-auto {
+    margin: auto !important;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-item-center {
+    align-items: center;
+}
 .btn-grey {
     background: #e8e8e8;
     border: 0;
     padding: 5px 20px;
+}
+.btn-red {
+    background: #E03F2C;
+    border: 0;
+    padding: 10px 20px;
+    color: #fff;
+}
+.btn-red:hover {
+    background: #C61026;
+}
+.btn-blue {
+    background: #0189c8;
+    border: 0;
+    padding: 10px 20px;
+    color: #fff;
+}
+.btn-blue:hover {
+    background: #0277ad;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.hr {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+}
+.form-group label {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.w-50 {
+    width: 50%;
+}
+.form-control {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-text {
+    display: block;
+    margin-top: .25rem;
+}
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+.red {
+  color: red;
 }
 
 /* End
@@ -165,19 +270,15 @@ textarea {
    ========================================================================== */
 
 
-.top-bar, .bottom-bar {
+.top-bar {
   padding: 15px;
   background-color: #f7f8f9;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-items: flex-end;
 }
-
+nav {
+    position: relative;
+}
 .top-profile {
-
+    float: left;
 }
 
 .profile-img {
@@ -199,15 +300,11 @@ textarea {
 }
 
 .nav {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-items: flex-end;
-  margin-left: auto;
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
-
 .dropdown {
   position: relative;
   margin-right: 20px;
@@ -220,18 +317,18 @@ textarea {
 
 .dropdown-menu {
     position: absolute;
-    top: 90%;
+    top: 100%;
     left: 0;
     z-index: 1000;
     display: none;
-    min-width: 10rem;
+    min-width: 12rem;
     padding: .5rem;
-    /*margin: .125rem 0 0;*/
     text-align: left;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.15);
     border-radius: .25rem;
+    /*list-style: disc;*/
 }
 
 .dropdown-menu a {
@@ -250,7 +347,7 @@ textarea {
 
 .dropdown:hover .dropdown-menu{
   display: block;
-
+  
 }
 
 .header-search .form-check{
@@ -264,50 +361,57 @@ textarea {
 .header-search .form-group input {
     padding: 3px 5px;
 }
-.heading{
-    padding:0px 15px;
+.nav-item h3 {
+  padding: 0 12px;
 }
 
- .bottom-bar {
-     position: fixed;
-     bottom: 0;
-     width: 98%;
+/* End
+   ========================================================================== */
+
+/* Footer
+   ========================================================================== */
+
+footer {
+    padding: 15px;
+    background-color: #f7f8f9;
 }
 
-.member2logo{
-  height: 100px;
-  width: auto;
+.bottom-bar {
+    position: relative;
 }
-/* navigation bar */
-nav.links-nav{
-  width: 200px;
-  text-align: center;
-  background-color: powderblue;
-  border: 2px solid black;
-  font-weight: 10;
-  position: absolute;
-	top: 5px;
+.copyright {
+  margin-top: 20px;
 }
-nav.links-nav ul.links-nav{
-  width: inherit;
-  background-color: pink;
-  display: none;
-  list-style: none;
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-  /* position: fixed; */
+
+/* End
+   ========================================================================== */
+
+/* Responsive
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+  .top-profile, .nav {
+    float: none;
+  }
+  .nav {
+    position: initial;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .header-search {
+    text-align: left;
+  }
+  .heading-title, .copyright {
+    text-align: center;
+  }
+  .w-50 {
+    width: 100%;
+  }
+  .row {
+    display: initial;
+  }
 }
-nav.links-nav:hover ul{
-  display: block;
-}
-nav.links-nav ul.links-nav li{
-  border-top: 2px solid black;
-  width: inherit;
-}
-nav.links-nav ul.links-nav li:hover{
-  background-color: white;
-}
+
 
 /* End
    ========================================================================== */
